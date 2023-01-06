@@ -51,8 +51,8 @@ def main():
         
     st.success(Predict)
 st.subheader('Predicted Result')
-image1 = Image.open(r'C:\Users\abhil\Downloads\Streamlit\hurray-vp7m1t.jpg')
-image2 = Image.open(r'C:\Users\abhil\Downloads\Streamlit\oops.png')
+image1 = Image.open(r'hurray-vp7m1t.jpg')
+image2 = Image.open(r'oops.png')
     
 if __name__ == '__main__':
     main()
