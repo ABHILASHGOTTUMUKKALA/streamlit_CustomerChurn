@@ -19,8 +19,10 @@ def Churn_prediction(input_data):
     print(prediction)
 
     if (prediction[0] == 0):
+      st.image(image1)  
       return 'Customer Stayed Back'
     else:
+      st.image(image2)  
       return 'Customer Churned'
 
 
@@ -48,6 +50,9 @@ def main():
         
         
     st.success(Predict)
+st.subheader('Predicted Result')
+image1 = Image.open(r'C:\Users\abhil\Downloads\Streamlit\hurray-vp7m1t.jpg')
+image2 = Image.open(r'C:\Users\abhil\Downloads\Streamlit\oops.png')
     
 if __name__ == '__main__':
     main()
