@@ -32,9 +32,9 @@ def main():
     # getting the input data from the user
     
     account_length = st.text_input('Number of Days Since the Customer Joined')
-    voice_mail_plan = st.selectbox('Does the Customer have a voicemail plan', ('1','0'))
+    voice_mail_plan = st.selectbox('Does the Customer have a voicemail plan', ({'Yes':'1','No':'0'}))
     customer_service_calls = st.text_input('Calls placed to Customerservice')
-    international_plan = st.selectbox('Does the Customer have a International plan', ('1','0'))
+    international_plan = st.selectbox('Does the Customer have a International plan', ({'Yes':'1','No':'0'}))
     total_charge = st.text_input('Total_charge')
     Total_calls = st.text_input('Total_calls')
     
